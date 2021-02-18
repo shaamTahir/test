@@ -2,7 +2,7 @@ export const actionTypes = {
   AUTHENTICATION: "AUTHENTICATION",
 };
 
-const baseUrl = "";
+const baseUrl = "http://12aed4782d6b.ngrok.io";
 
 export const login = (email, password, endpoint) => async (dispatch) => {
   const response = await fetch(`${baseUrl}${endpoint}`, {
